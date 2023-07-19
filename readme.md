@@ -4,7 +4,7 @@ This is a simple login and signup site created using Flask. It allows users to c
 ## Images
 <div align="center">
   <p>Login Page (login.html)</p>
-<img src="githubimages/index.png" width="350" title="login.html">
+<img src="githubimages/login.png" width="350" title="login.html">
     <p>Signup Page (Signup.html)</p>
 <img src="githubimages/signup.png" width="350" title="signup.html">
 
