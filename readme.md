@@ -2,10 +2,9 @@
 This is a simple login and signup site created using Flask. It allows users to create an account, log in, and view a success page if the login is successful. The site uses a database to store user information.
 
 ## Signup Page 
-![Signup Page](githubimages/signup.png)
+<img src="githubimages/signup.png" size= 50px>
 ## Login Page
-![Login Page](githubimages/login.png)
-
+<img src="githubimages/login.png" size= 50px>
 ## Prerequisites
 - Python 3.x
 - Flask
