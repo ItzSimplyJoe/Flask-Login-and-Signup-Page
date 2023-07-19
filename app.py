@@ -29,7 +29,7 @@ def success():
 def create_account():
     username = request.form["username"]
     password = request.form["password"]
-    db = get_db()  # Get the database connection within the current thread
+    db = get_db()
     others = db.fetch(username)
     if others:
         flash("Username already exists", "error")
@@ -42,7 +42,7 @@ def create_account():
             try:
                 db.insert(username, password)
                 flash("Account created successfully, please login", "success")
-                return redirect(url_for("signup"))
+                return redirect(url_for("login"))
             except:
                 flash("An error occurred", "error")
                 return redirect(url_for("signup"))
@@ -52,7 +52,7 @@ def create_account():
 def login_account():
     username = request.form["username"]
     password = request.form["password"]
-    db = get_db()  # Get the database connection within the current thread
+    db = get_db()
     user = db.login(username, password)
     if user:
         return redirect(url_for("success"))
